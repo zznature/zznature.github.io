@@ -27,7 +27,7 @@
 <meta property="og:site_name" content="Zz">
 <meta property="og:description" content="社交网络的时代，个人页面在每个平台上都有，但是又似乎并不属于个人。于是还是想建立独立性更高的网页，经常能把平常的想法梳理总结一番。听过了很多道理，看过了很多道理，但没有内化于心外化于行，又怎么过好这一生。  尝试过流行的博客软件如Wordpress，一般都有点复杂，用到LAMP数据库系列管理内容，部署在AWS上，做这个主要为了练习技术，做个人网页就有点大材小用了。而且每个月差不多要¥40多，感觉">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-04-14T12:54:04.056Z">
+<meta property="og:updated_time" content="2020-04-14T12:57:51.935Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="从零开始搭建个人网页记录">
 <meta name="twitter:description" content="社交网络的时代，个人页面在每个平台上都有，但是又似乎并不属于个人。于是还是想建立独立性更高的网页，经常能把平常的想法梳理总结一番。听过了很多道理，看过了很多道理，但没有内化于心外化于行，又怎么过好这一生。  尝试过流行的博客软件如Wordpress，一般都有点复杂，用到LAMP数据库系列管理内容，部署在AWS上，做这个主要为了练习技术，做个人网页就有点大材小用了。而且每个月差不多要¥40多，感觉">
@@ -187,7 +187,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-04-14 20:54:04" itemprop="dateModified" datetime="2020-04-14T20:54:04+08:00">2020-04-14</time>
+                <time title="Modified: 2020-04-14 20:57:51" itemprop="dateModified" datetime="2020-04-14T20:57:51+08:00">2020-04-14</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -213,9 +213,10 @@
         <blockquote>
 <p>社交网络的时代，个人页面在每个平台上都有，但是又似乎并不属于个人。于是还是想建立独立性更高的网页，经常能把平常的想法梳理总结一番。听过了很多道理，看过了很多道理，但没有内化于心外化于行，又怎么过好这一生。</p>
 </blockquote>
-<p>尝试过流行的博客软件如Wordpress，一般都有点复杂，用到LAMP数据库系列管理内容，部署在AWS上，做这个主要为了练习技术，做个人网页就有点大材小用了。而且每个月差不多要¥40多，感觉没啥必要。<br>长久之计还是选择免费的平台，利用<strong>GitHub Pages</strong>，选用静态网页生成器<strong>Hexo</strong>（其他Jekyll之类也都大同小异，对于我来说都是功能远大于需求）。工作过程就是在自己的电脑上用Markdown写字，Hexo把Markdown文档转变成html格式，然后GitHub pages作为服务器托管网页文件。</p>
+<p>尝试过流行的博客软件如<strong>Wordpress</strong>，一般都有点复杂，用到LAMP数据库系列管理内容，部署在AWS上，做这个主要为了练习技术，做个人网页就有点大材小用了。而且每个月差不多要¥40多，感觉没啥必要。<br>长久之计还是选择免费的平台，利用<strong>GitHub Pages</strong>，选用静态网页生成器<strong>Hexo</strong>（其他Jekyll之类也都大同小异，对于我来说都是功能远大于需求）。工作过程就是在自己的电脑上用Markdown写字，Hexo把Markdown文档转变成html格式，然后GitHub pages作为服务器托管网页文件。</p>
 <p>当然首先挑选一个好看的主题Next，模版选了Mist，具有一个很大的使用和维护的Community很重要。具体使用操作如下。</p>
-<p>本地命令行基本上只需要用到<figure class="highlight plain"><figcaption><span>generate ```和``` hexo deploy ```。</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">**注意**</span><br><span class="line">Hexo的配置修改的在_config.yml文件中。</span><br><span class="line">主题Theme的修改在其目录下面的_config.yml文件中。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">### 创建内容和发布</span><br><span class="line"></span><br><span class="line">在本地渲染成网页内容。</span><br><span class="line">``` bash</span><br><span class="line">    (base) Zz:HexoBlogzz zhouzhang$ hexo generate</span><br><span class="line">    INFO  Start processing</span><br><span class="line">    INFO  Files loaded in 691 ms</span><br><span class="line">    INFO  Generated: 2018/02/14/hello-world/index.html</span><br><span class="line">    .....</span><br></pre></td></tr></table></figure></p>
+<p><strong>注意</strong><br>Hexo的配置修改的在_config.yml文件中。<br>主题Theme的修改在其目录下面的_config.yml文件中。</p>
+<h3 id="创建内容和发布"><a href="#创建内容和发布" class="headerlink" title="创建内容和发布"></a>创建内容和发布</h3><p>在本地渲染成网页内容。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(base) Zz:HexoBlogzz zhouzhang$ hexo generate</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Files loaded <span class="keyword">in</span> 691 ms</span><br><span class="line">INFO  Generated: 2018/02/14/hello-world/index.html</span><br><span class="line">.....</span><br></pre></td></tr></table></figure></p>
 <p>推送到Github上，GitHub的账号和密钥在Hexo的_config.yml中设置</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">(base) Zz:hexo zhouzhang$ hexo deploy</span><br><span class="line">INFO  Deploying: git</span><br><span class="line">INFO  Clearing .deploy_git folder...</span><br><span class="line">INFO  Copying files from public folder...</span><br><span class="line">INFO  Copying files from extend <span class="built_in">dirs</span>...</span><br><span class="line">位于分支 master</span><br><span class="line">无文件要提交，干净的工作区</span><br><span class="line">......</span><br><span class="line">INFO  Deploy <span class="keyword">done</span>: git</span><br></pre></td></tr></table></figure>
 <h3 id="维护Hexo"><a href="#维护Hexo" class="headerlink" title="维护Hexo"></a>维护Hexo</h3><p>更新Hexo<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">(base) Zz:HexoBlogzz zhouzhang$ npm update</span><br><span class="line">......</span><br></pre></td></tr></table></figure></p>
@@ -308,7 +309,7 @@ hexo-cli: 1.0.4
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#维护Hexo"><span class="nav-number">1.</span> <span class="nav-text">维护Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考-amp-致谢"><span class="nav-number">2.</span> <span class="nav-text">参考&amp;致谢</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#To-be-done"><span class="nav-number">3.</span> <span class="nav-text">To be done</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建内容和发布"><span class="nav-number">1.</span> <span class="nav-text">创建内容和发布</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#维护Hexo"><span class="nav-number">2.</span> <span class="nav-text">维护Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考-amp-致谢"><span class="nav-number">3.</span> <span class="nav-text">参考&amp;致谢</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#To-be-done"><span class="nav-number">4.</span> <span class="nav-text">To be done</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
