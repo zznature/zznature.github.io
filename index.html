@@ -260,7 +260,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-04-06 00:55:18" itemprop="dateModified" datetime="2020-04-06T00:55:18+08:00">2020-04-06</time>
+                <time title="Modified: 2020-04-14 18:40:32" itemprop="dateModified" datetime="2020-04-14T18:40:32+08:00">2020-04-14</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -283,11 +283,13 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>利用GitHub Pages，选用静态网页生成器Hexo<br>选择一个好看的主题Next</p>
-<h3 id="创建内容和发布"><a href="#创建内容和发布" class="headerlink" title="创建内容和发布"></a>创建内容和发布</h3><p>在本地渲染成网页内容<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(base) Zz:HexoBlogzz zhouzhang$ hexo generate</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Files loaded <span class="keyword">in</span> 691 ms</span><br><span class="line">INFO  Generated: 2018/02/14/hello-world/index.html</span><br><span class="line">.....</span><br></pre></td></tr></table></figure></p>
-<p>推送到Github上</p>
+          <blockquote>
+<p>社交网络的时代，个人网页在每个平台上都有，但是又似乎并不属于个人。于是还是想建立独立性更高的网页，经常能把平常的想法梳理总结一番。听过了很多道理，看过了很多道理，但没有内化于心外化于行，又怎么过好这一生。</p>
+</blockquote>
+<p>尝试过流行但博客系统如Wordpress，一般都有点复杂，用到LAMP数据库系列管理内容，部署在AWS上，做这个主要为了练习技术，做个人网页就有点大材小用了。而且每个月差不多要¥40多，感觉没啥必要。<br>长久之计还是选择免费的平台，利用GitHub Pages，选用静态网页生成器Hexo（其他Jekyll之类也都大同小异，对于我来说都是功能远大于需求）。工作过程就是在自己的电脑上用Markdown写字，Hexo把Markdown文档转变成html格式，然后GitHub pages作为服务器托管网页文件。本地命令行基本上只需要用到generate和deploy。<br>当然首先挑选一个好看的主题Next，模版选了Mist，具有一个很大都使用和维护都Community很重要。具体使用操作如下。</p>
+<h3 id="创建内容和发布"><a href="#创建内容和发布" class="headerlink" title="创建内容和发布"></a>创建内容和发布</h3><p>在本地渲染成网页内容。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(base) Zz:HexoBlogzz zhouzhang$ hexo generate</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Files loaded <span class="keyword">in</span> 691 ms</span><br><span class="line">INFO  Generated: 2018/02/14/hello-world/index.html</span><br><span class="line">.....</span><br></pre></td></tr></table></figure></p>
+<p>推送到Github上，GitHub的账号和密钥在_config.yml中</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">(base) Zz:hexo zhouzhang$ hexo deploy</span><br><span class="line">INFO  Deploying: git</span><br><span class="line">INFO  Clearing .deploy_git folder...</span><br><span class="line">INFO  Copying files from public folder...</span><br><span class="line">INFO  Copying files from extend <span class="built_in">dirs</span>...</span><br><span class="line">位于分支 master</span><br><span class="line">无文件要提交，干净的工作区</span><br><span class="line">......</span><br><span class="line">INFO  Deploy <span class="keyword">done</span>: git</span><br></pre></td></tr></table></figure>
-<h3 id="To-be-done"><a href="#To-be-done" class="headerlink" title="To be done"></a>To be done</h3><p>使用个人域名<br>photo gallery plugins</p>
 <h3 id="维护Hexo"><a href="#维护Hexo" class="headerlink" title="维护Hexo"></a>维护Hexo</h3><p>更新Hexo<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">(base) Zz:HexoBlogzz zhouzhang$ npm update</span><br><span class="line">......</span><br></pre></td></tr></table></figure></p>
 <p>查询当前version</p>
 <pre><code class="bash">(base) Zz:HexoBlogzz zhouzhang$ hexo -v
@@ -295,7 +297,8 @@ hexo: 3.9.0
 hexo-cli: 1.0.4
 ......
 </code></pre>
-<h3 id="参考-amp-致谢"><a href="#参考-amp-致谢" class="headerlink" title="参考&amp;致谢"></a>参考&amp;致谢</h3><p>Hexo<br>GitHub Pages<br>Markdown Cheatsheet</p>
+<h3 id="参考-amp-致谢"><a href="#参考-amp-致谢" class="headerlink" title="参考&amp;致谢"></a>参考&amp;致谢</h3><p>Hexo.io<br>GitHub Pages<br>Markdown Cheatsheet</p>
+<h3 id="To-be-finished"><a href="#To-be-finished" class="headerlink" title="To be finished"></a>To be finished</h3><p>使用个人域名<br>photo gallery plugins<br>RSS</p>
 
       
     </div>
